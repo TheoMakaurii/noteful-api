@@ -38,7 +38,7 @@ foldersRouter
         .then(data =>{
             res 
             .status(201)
-            .location(`/api/folder/${data.id}`)
+            .location(`/api/folders/${data.id}`)
             .json({
                 id: data.id,
                 folder: xss(data.folder),
